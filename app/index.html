@@ -255,7 +255,18 @@
 				speed: 1000,
 	
 			});
+
+			mySwiper.on('progress', function () {
+				
+				sliderProgress();
+			});
+
+
 		});
+
+		function sliderProgress() {
+			console.log('tick');
+		}
 	</script>
 </body>
 </html>
