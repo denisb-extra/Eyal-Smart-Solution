@@ -292,7 +292,11 @@
 			let centerx = $(".slider-top-radial").width() / 2;
 			$(".box-category").each(function(){
 				//if(!$(".ds", this).length) $(".inner", this).append("<div class='ds'></div>");
+				
 				let myxpos = $(this).offset().left + $(this).width() / 2;
+				if($('body').width() > 1920) {
+					myxpos -= ($('body').width() - 1920) / 2;
+				}
 				let distanceFromCenter = centerx - myxpos;
 				let distanceFromCenterPercent = distanceFromCenter/centerx;
 				//$(".ds", this).text(distanceFromCenterPercent);
