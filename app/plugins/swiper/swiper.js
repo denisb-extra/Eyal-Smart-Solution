@@ -1226,6 +1226,7 @@
   }
 
   function updateSlides () {
+    console.log('update');
     var swiper = this;
     var params = swiper.params;
 
@@ -1914,7 +1915,6 @@
 
   function translateTo (translate, speed, runCallbacks, translateBounds, internal) {
     var obj;
-
     if ( translate === void 0 ) translate = 0;
     if ( speed === void 0 ) speed = this.params.speed;
     if ( runCallbacks === void 0 ) runCallbacks = true;
@@ -2085,7 +2085,6 @@
 
   function slideTo (index, speed, runCallbacks, internal) {
     var obj;
-
     if ( index === void 0 ) index = 0;
     if ( speed === void 0 ) speed = this.params.speed;
     if ( runCallbacks === void 0 ) runCallbacks = true;

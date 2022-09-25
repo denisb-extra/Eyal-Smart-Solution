@@ -229,22 +229,9 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="nav">
-				<div class="arrow right">
-					<img src="images/icons/arrow-right-w.svg">
-				</div>
-
-				<div class="arrow left">
-					<img src="images/icons/arrow-left-w.svg">
-				</div>
-			</div>
 		</div>
 		<div class="section-inner">
-			<div class="title">
-				<p class="line-1">מניפת המוצרים החכמים של</p>
-				<p class="line-2">EYAL SMART SOLUTION</p>
-			</div>
+
 
 		</div>
 	</section>
@@ -261,10 +248,7 @@
 					delay: 3000,
 					disableOnInteraction: false
 				},
-				navigation: {
-					nextEl: '.slider-top-radial .arrow.left',
-					prevEl: '.slider-top-radial .arrow.right',
-				},
+				
 				
 				
 				speed: 1000,
@@ -275,13 +259,11 @@
 			
 			sliderProgress();
 			
-			
 			function animate() {
 				sliderProgress();
 				requestAnimationFrame(animate);
 			}
 			animate();
-			
 
 		
 
@@ -299,8 +281,8 @@
 				
 				let rotation = -20 * distanceFromCenterPercent;
 
-				$(".inner", this).css('transform-origin', distanceFromCenter + $(this).width() / 2+ 'px ' + 3500  + 'px');
-				$(".inner", this).css('transform', 'rotate('+rotation+'deg)' + ' translateX('+distanceFromCenter+'px)');
+				$(".inner", this).css('transform-origin', distanceFromCenter + $(this).width() / 2+ 'px ' + 1000  + 'px');
+				$(".inner", this).css('transform', 'rotate('+rotation+'deg)');
 			});
 		}
 

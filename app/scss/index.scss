@@ -410,12 +410,43 @@ header {
 section.slider-top {
     background: url("../images/index/bg-top.png") no-repeat;
     padding: 165px 0;
-    
+    height: 2000px;
     .slider-top-radial {
+        overflow: visible;
         .swiper-wrapper {
             .swiper-slide {
                 height: auto;
+
             }
+        }
+
+        .nav {
+            margin-top: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .arrow {
+                cursor: pointer;
+                margin: 20px;
+            }
+        }
+    }
+
+    .title {
+        text-align: center;
+        margin-top: 25px;
+
+        .line-1 {
+            @include f-bl;
+            font-size: 77px;
+            color: #fff;
+        }
+
+        .line-2 {
+            @include f-i-bl;
+            font-size: 64px;
+            color: #F9C900;
         }
     }
   
