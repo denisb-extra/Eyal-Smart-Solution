@@ -410,7 +410,7 @@ header {
 section.slider-top {
     background: url("../images/index/bg-top.png") no-repeat;
     padding: 165px 0;
-    height: 2000px;
+   
     .slider-top-radial {
         overflow: visible;
         .swiper-wrapper {
@@ -474,22 +474,15 @@ section.slider-top {
 
     .text {
         padding: 30px;
+        
         .title {
             @include f-b;
             font-size: 40px;
             color: #404040;
+            text-align: right;
         }
-        .button {
-            padding: 13px 20px;
-            background: #535353;
-            border-radius: 25px;
-            display: inline-block;
-            @include f-b;
-            font-size: 18px;
-            color: #fff;
+        .button-regular {
             margin-top: 30px;
-
-            cursor: pointer;
         }
     }
 

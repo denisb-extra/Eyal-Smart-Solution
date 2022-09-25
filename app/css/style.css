@@ -137,6 +137,19 @@ section {
     .section-subtitle {
       font-size: 16px; } }
 
+.button-regular {
+  padding: 13px 20px;
+  background: #535353;
+  border-radius: 25px;
+  display: inline-block;
+  font-family: 'almoni-dl-bold';
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.5s; }
+  .button-regular:hover {
+    background-color: #F9C900; }
+
 .loading:after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -478,8 +491,7 @@ header {
 /* ---------------------- Section slider-top ---------------------- */
 section.slider-top {
   background: url("../images/index/bg-top.png") no-repeat;
-  padding: 165px 0;
-  height: 2000px; }
+  padding: 165px 0; }
   section.slider-top .slider-top-radial {
     overflow: visible; }
     section.slider-top .slider-top-radial .swiper-wrapper .swiper-slide {
@@ -524,17 +536,10 @@ section.slider-top {
     .box-category .text .title {
       font-family: 'almoni-dl-bold';
       font-size: 40px;
-      color: #404040; }
-    .box-category .text .button {
-      padding: 13px 20px;
-      background: #535353;
-      border-radius: 25px;
-      display: inline-block;
-      font-family: 'almoni-dl-bold';
-      font-size: 18px;
-      color: #fff;
-      margin-top: 30px;
-      cursor: pointer; }
+      color: #404040;
+      text-align: right; }
+    .box-category .text .button-regular {
+      margin-top: 30px; }
   .box-category .ds {
     font-family: 'almoni-dl-regular';
     font-size: 18px;

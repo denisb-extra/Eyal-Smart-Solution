@@ -171,7 +171,7 @@
 							</div>
 							<div class="text">
 								<p class="title">פרופילי טיח מאלומיניום</p>
-								<div class="button">צפה במוצרים</div>
+								<div class="button-regular">צפה במוצרים</div>
 							</div>
 						</div>
 					</div>
@@ -184,7 +184,7 @@
 							</div>
 							<div class="text">
 								<p class="title">פרופילי פינה, קצה, סיום והגנה</p>
-								<div class="button">צפה במוצרים</div>
+								<div class="button-regular">צפה במוצרים</div>
 							</div>
 						</div>
 					</div>
@@ -197,7 +197,7 @@
 							</div>
 							<div class="text">
 								<p class="title">פרופילי גישור-בזמן יישום האריחים</p>
-								<div class="button">צפה במוצרים</div>
+								<div class="button-regular">צפה במוצרים</div>
 							</div>
 						</div>
 					</div>
@@ -210,7 +210,7 @@
 							</div>
 							<div class="text">
 								<p class="title">פרופילים לאריחים מדוקקים</p>
-								<div class="button">צפה במוצרים</div>
+								<div class="button-regular">צפה במוצרים</div>
 							</div>
 						</div>
 					</div>
@@ -223,7 +223,7 @@
 							</div>
 							<div class="text">
 								<p class="title">מדרגה בזמן יישום האריחים</p>
-								<div class="button">צפה במוצרים</div>
+								<div class="button-regular">צפה במוצרים</div>
 							</div>
 						</div>
 					</div>
@@ -271,19 +271,7 @@
 
 			});
 
-
-			
 			sliderProgress();
-			
-			
-			function animate() {
-				sliderProgress();
-				requestAnimationFrame(animate);
-			}
-			animate();
-			
-
-		
 
 
 		});
@@ -303,9 +291,11 @@
 				
 				let rotation = -20 * distanceFromCenterPercent;
 
-				$(".inner", this).css('transform-origin', distanceFromCenter + $(this).width() / 2+ 'px ' + 3500  + 'px');
+				$(".inner", this).css('transform-origin', distanceFromCenter + $(this).width() / 2 + 'px ' + 3500  + 'px');
 				$(".inner", this).css('transform', 'rotate('+rotation+'deg)' + ' translateX('+distanceFromCenter+'px)');
 			});
+
+			requestAnimationFrame(sliderProgress);
 		}
 
 

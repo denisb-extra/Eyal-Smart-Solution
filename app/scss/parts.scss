@@ -109,6 +109,22 @@ section {
 	}
 }
 
+.button-regular {
+	padding: 13px 20px;
+	background: #535353;
+	border-radius: 25px;
+	display: inline-block;
+	@include f-b;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+	transition: background-color 0.5s;
+
+	&:hover {
+		background-color: #F9C900;
+	}
+}
+
 
 .loading:after {
 	display: inline-block;
